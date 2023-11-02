@@ -6,6 +6,15 @@ def encode_password(user_inp):
         password_enc += str(i)
     return password_enc
 
+
+def decode_password(password_enc):
+    password_dec = ""
+    for i in str(password_enc):
+        i = int(i) - 3
+        password_dec += str(i)
+    return password_dec
+
+
 def main():
     password_enc = 0
     while True:
